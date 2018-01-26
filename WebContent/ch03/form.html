@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Form Style 9</title>
+
+<style type="text/css">
+body{
+	background: #17445E;
+	color: #5D5D5D;
+}
+.form-style-9{
+	max-width: 450px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+li.title{
+text-align: center;}
+</style>
+</head>
+<body>
+
+<form class="form-style-9" action="/jspPro/ch03/viewParameter.jsp" method="post">
+<ul>
+<li class="title">
+<b>&lt;연령과 애완동물 조사&gt;</b></li></p>
+<hr>
+<li>
+    <input type="text" name="name" class="field-style field-split align-left" placeholder="이름 입력" />
+    <input type="text" name="tel" class="field-style field-split align-right" placeholder="전화번호 입력" />
+
+</li>
+<hr>
+<li><p><b>Pet :&nbsp; </b> <p/>
+    <input type="checkbox" name="pet" value="dog" />개&nbsp;&nbsp; 
+    <input type="checkbox" name="pet" value="cat" />고양이&nbsp;&nbsp; 
+    <input type="checkbox" name="pet" value="pig" />돼지&nbsp;&nbsp;
+    <input type="checkbox" name="pet" value="bird" />새&nbsp;&nbsp;
+    <input type="checkbox" name="pet" value="fish" />물고기&nbsp;&nbsp;
+    <input type="checkbox" name="pet" value="etc" />기타&nbsp;</p>
+    
+    
+</li>
+<hr>
+<li><b>Age : </b><p/>
+<input type="radio" name="age" value="10"> 10대<br>
+<input type="radio" name="age" value="20"> 20대<br>
+<input type="radio" name="age" value="30"> 30대<br>
+<input type="radio" name="age" value="40"> 40대<br>
+<input type="radio" name="age" value="50"> 50대 이상<br>
+
+</li>
+<hr>
+
+<li>
+<input type="submit" value="Send" />
+</li>
+</ul>
+</form>
+
+</body>
+</html>
