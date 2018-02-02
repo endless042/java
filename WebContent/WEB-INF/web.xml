@@ -27,6 +27,29 @@
 
 	</context-param>
 
-
-
+	<error-page>
+		<error-code>404</error-code>
+		<location>/ch06/error/error404.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/ch06/error/error500.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/ch06/error/errorNullPointer.jsp</location>
+	</error-page>
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>/ch07/view/*</url-pattern> <!-- 이 경로에 포함된 모든 파일의 -->
+			<include-prelude>/ch07/common/variable.jspf</include-prelude> <!-- 헤더와 푸터를 지정  -->
+			<include-coda>/ch07/common/footer.jspf</include-coda>
+		</jsp-property-group> <!-- 모든 문서의 헤더 디렉티브가 다 같아야 함. 띄어쓰기, 대소문자 등등까지 같아야 함. -->
+	</jsp-config>
+	<servlet>
+		<servlet-name>OracleDriverLoader</servlet-name>
+		<servlet-class>jdbc.OracleDriverLoader</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
 </web-app>
