@@ -47,9 +47,13 @@
 			<include-coda>/ch07/common/footer.jspf</include-coda>
 		</jsp-property-group> <!-- 모든 문서의 헤더 디렉티브가 다 같아야 함. 띄어쓰기, 대소문자 등등까지 같아야 함. -->
 	</jsp-config>
+
+	
+	
 	<servlet>
-		<servlet-name>OracleDriverLoader</servlet-name>
-		<servlet-class>jdbc.OracleDriverLoader</servlet-class>
+		<servlet-name>DBCPInit</servlet-name>
+		<servlet-class>jdbc.DBCPInit</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
 </web-app>
